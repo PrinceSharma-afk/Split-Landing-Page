@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.split {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  flex-direction: column;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: flex 1s ease;
+}
+
+.split.left {
+  background-image: url('./img/ashes-sitoula-KdZvvyemkPM-unsplash.jpg');
+}
+
+.split.right {
+  background-image: url('./img/jakub-kapusnak-Hj53USePB1E-unsplash.jpg');
+}
+
+.split.active {
+  flex: 2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+  border-color: #fff;
+}
+
+.split.left h1 {
+  font-family: 'Pacifico', cursive;
+  color: #ffdd59;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.split.left .btn:hover {
+  background-color: #ffdd59;
+  border-color: #333;
+}
+
+.split.right h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #f5f6fa;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.what-came-first {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #a307f1;
+  text-align: center;
+  z-index: 10;
+}
